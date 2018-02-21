@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Game of Thrones Quiz</title>
+</head>
+<body>
+
+	<div class="main">
+
+		<h1>Game of Thrones Quiz</h1>
+
+		<h3>Are you a true fan of Game of Thrones? Let's find out!</h3>
+
+		<form>
+
+			<!-- Each answer has a value of either 0 or 1 where 0 = wrong and 1 = right -->
+			
+			<p>1) Which character has appeared on more episodes than any other in the whole show?</p>
+
+			<input type="radio" name="question1" value="0"><label>Sansa Stark</label>
+
+			<input type="radio" name="question1" value="0"><label>Cersei Lannister</label>
+
+			<input type="radio" name="question1" value="1"><label>Tyrion Lannister</label>
+
+			<input type="radio" name="question1" value="0"><label>Jon Snow</label>
+
+			<input type="radio" name="question1" value="0"><label>Daenerys Targaryen</label>
+
+			
+
+			
+
+			<p>2) How many actors from Harry Potter appeared on Game of Thrones?</p>
+
+			<input type="radio" name="question2" value="0"><label>7</label>
+
+			<input type="radio" name="question2" value="0"><label>2</label>
+
+			<input type="radio" name="question2" value="0"><label>None</label>
+
+			<input type="radio" name="question2" value="1"><label>14</label>
+
+			<input type="radio" name="question2" value="0"><label>23</label>
+
+			
+
+ 
+			<p>3) Which is the most viewed episode to date?</p>
+
+			<input type="radio" name="question3" value="0"><label>"Mother's Mercy"</label>
+
+			<input type="radio" name="question3" value="0"><label>"Winds of Winter"</label>
+
+			<input type="radio" name="question3" value="1"><label>"The Dragon and the Wolf"</label>
+
+			<input type="radio" name="question3" value="0"><label>"The Rains of Castamere"</label>
+
+			<input type="radio" name="question3" value="0"><label>"Oathbreaker"</label>
+
+			
+
+
+			<p>4) What is the name of King Tommen's cat?</p>
+
+			<input type="radio" name="question4" value="1"><label>Ser Pounce</label>
+
+			<input type="radio" name="question4" value="0"><label>Ghost</label>
+
+			<input type="radio" name="question4" value="0"><label>Snowball</label>
+
+			<input type="radio" name="question4" value="0"><label>Matilda</label>
+
+			<input type="radio" name="question4" value="0"><label>Ginger</label>
+
+			
+
+
+			<p>5) Who killed Rhaegar Targaryen?</p>
+
+			<input type="radio" name="question5" value="0"><label>Jaime Lannister</label>
+
+			<input type="radio" name="question5" value="1"><label>Robert Baratheon</label>
+
+			<input type="radio" name="question5" value="0"><label>Eddard Stark</label>
+
+			<input type="radio" name="question5" value="0"><label>The Mountain</label>
+
+			<input type="radio" name="question5" value="0"><label>Lyanna Stark</label>
+
+			
+
+
+			<p>6) What is the name of Meera's father?</p>
+
+			<input type="radio" name="question6" value="0"><label>Gregor Clegane</label>
+
+			<input type="radio" name="question6" value="0"><label>Jon Snow</label>
+
+			<input type="radio" name="question6" value="0"><label>Khal Drogo</label>
+
+			<input type="radio" name="question6" value="0"><label>Little Finger</label>
+
+			<input type="radio" name="question6" value="1"><label>Howland Reed</label>
+
+			
+
+
+			<p>7) What's the total death count so far in the show?</p>
+
+			<input type="radio" name="question7" value="0"><label>It's impossible to know</label>
+
+			<input type="radio" name="question7" value="0"><label>1000</label>
+
+			<input type="radio" name="question7" value="1"><label>150,966</label>
+
+			<input type="radio" name="question7" value="0"><label>123,789</label>
+
+			<input type="radio" name="question7" value="0"><label>76,892</label>
+
+			
+
+
+			<p>8) How many episodes don't feature any deaths?</p>
+
+			<input type="radio" name="question8" value="0"><label>3</label>
+
+			<input type="radio" name="question8" value="0"><label>None</label>
+
+			<input type="radio" name="question8" value="0"><label>7</label>
+
+			<input type="radio" name="question8" value="1"><label>2</label>
+
+			<input type="radio" name="question8" value="0"><label>10</label>
+
+			
+
+
+			<p>9) What's the average cost per episode?</p>
+
+			<input type="radio" name="question9" value="0"><label>13 million USD</label>
+
+			<input type="radio" name="question9" value="0"><label>7 million USD</label>
+
+			<input type="radio" name="question9" value="0"><label>9 million USD</label>
+
+			<input type="radio" name="question9" value="0"><label>1 million USD</label>
+
+			<input type="radio" name="question9" value="1"><label>5 million USD</label>
+
+			
+
+
+			<p>10) Which characters was played by two different actors?</p>
+
+			<input type="radio" name="question10" value="1"><label>Tommen Lannister</label>
+
+			<input type="radio" name="question10" value="0"><label>Eddard Stark</label>
+
+			<input type="radio" name="question10" value="0"><label>Jon Snow</label>
+
+			<input type="radio" name="question10" value="0"><label>Arya Stark</label>
+
+			<input type="radio" name="question10" value="0"><label>The Hound</label>
+
+			
+
+			
+			<div class="button">
+			<input type="button" onClick="checkScore()" value="Submit">
+			</div>
+
+		</form>
+
+		<span class="finalScore"></span> <!-- Holds the final score -->
+
+		<span class="answers"></span> <!-- Holds the right answers -->
+
+	</div> <!-- closes .main -->
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
